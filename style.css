@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    color:black;
+    background-color: rgb(59, 58, 58);
+}
+
+.alert{
+    padding-top:10px;
+    color:rgb(255, 2, 2);  
+    height:50px;
+    text-align:center;
+    font-size: 20px;
+}
+.head{
+    margin:300px 300px 20px 300px;
+    
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    margin:25px;
+}
+.sign{
+    font-size: 30px;
+    text-align: center;
+}
+.cont{
+    margin:100px 150px;
+    border:10px solid rgb(207, 207, 210);
+    background-color: rgb(143, 153, 207);
+}
+input{
+    width:150px;
+    height:25px;
+    border:none;
+    border-bottom:1px solid rgb(55, 42, 42); 
+    background-color: rgb(117, 192, 171);
+    color:rgb(12, 12, 12);
+    margin-left:30px;
+}
+
+label{
+    margin:10px;
+}
+::placeholder{
+    color:black;
+}
+input ,textarea{
+    background-color: rgb(119, 134, 211);
+    
+}
+
+.head{
+    margin:20px 30px 20px 30px;
+}
+.container{
+    border:2px solid gray; 
+    position: relative; 
+}
+
+.signn{
+    border-radius: 5px;
+    padding:5px;
+}
+.a{
+    text-decoration: none; 
+    color:black;
+}
+
+.hello{
+    color:aliceblue;
+    font-size: 50px;
+}
+.signupp{
+    width:200px;
+    height:25px;
+    border-radius: 10px;
+    margin:25px 120px 2px 120px;
+    cursor:pointer;
+}
+.already h3{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif; 
+    
+}
+.anc{
+    text-decoration: none; 
+    color:rgb(14, 227, 213);
+}
+.already{
+    text-align: center; 
+    margin-top:8px;
+}
+.signin{
+    margin:20px 140px;
+    width:150px;
+    border-radius: 10px;
+    height:25px;
+}
+
+.info{
+    color:aliceblue;
+}
+.nav{
+    background-color:aliceblue;
+    display:flex;
+    justify-content:space-between;
+}
+.btns{
+    position:relative; 
+    width:150px; 
+    margin-top:10px;
+    margin-right:0px;
+    right:30px;
+    float:right;
+    
+    background-color: aliceblue;
+}
+.header{
+    margin:15px 0 10px 20px;
+} 
+.signnav{
+    opacity:.5;
+}
+
+.loghead{
+    text-align: center;
+    margin-top:30px;
+}
+.intro{
+    display:inline-block;
+    margin:150px 200px;
+    font-size: 16px;
+}
+.main{
+    color:aliceblue;
+}
+.about h2{
+    margin:15px 0; 
+    color:rgb(11, 214, 241);
+}
+.about p{
+    color:aliceblue;
+    font-size: 18px;
+}
