@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css'  %}">
+</head>
+<body>
+    {% csrf_token %}    
+    <div class="nav signnav">
+        <h2 class="header">Welcome to xxxxxxxxxxxxx</h2>
+        <div class="btns">
+    <button type="submit" class="signn"><a href="/signup" class="a">SignUp</a></button>
+    <button type="submit" class="signn"><a href="/signin" class="a">SignIn</a></button>
+        </div>
+    </div>
+    <div class="cont">
+        {% for message in messages %} 
+        <h2 class="alert">{{ message }}</h2>
+    {% endfor %}
+    <h3 class="sign">SighIn</h3>
+    <form action="/signin" method="post" class="form">
+        {% csrf_token %}
+        <label for="username">Username</label> 
+        <input type="text" id="username" name="username" placeholder="Enter a username">
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="pw" placeholder="Enter a password"> 
+        <button type="submit" class="signin">Sign IN</button>
+    </form>
+    <div class="already">
+        <h3>if you have no account , <a href="signup" class="anc">Sign up</a></h3>
+    </div>
+    </div>
+</body>
+</html>

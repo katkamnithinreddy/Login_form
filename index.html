@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    {% csrf_token %}   
+    
+        
+    <!--<h1 class="head">Hello {{fname}}</h1> 
+        {% for message in messages %} 
+    <div class="alert 
+    alert-{{message.tags}} alert-dismissible fade show">
+    <strong></strong>{{ message }} 
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    {% endfor %}------>
+    {% if user.is_authenticated %}
+    <div class="nav">
+        <h2 class="header">Welcome to the company</h2>
+        <div class="btns">
+    <button type="submit" class="signn"><a href="/signout" class="a">Sign Out</a></button>
+        </div>
+    </div>
+    <div class="loghead">
+    <h2 class="hello">Hello {{fname}}</h2>
+    <h3 class="info">you are successfully logged in</h3>
+    <div class="intro">
+        <div class="main">
+            I am Nithin reddy , currently persuing Btech 3rd year in Institute of Aeronautical Enginnering.This is the real-time login form, developed using django.
+        </div>
+        <div class="about">
+            <h2>About this project</h2> 
+            <p>Firstly when you open this, it displays the signin and signout buttons at the top right,if you had already created account then click on signin or create your account by clicking the signup button.</p>
+        </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="nav">
+        <h2 class="header">Welcome to the Company</h2>
+        <div class="btns">
+    <button type="submit" class="signn"><a href="/signup" class="a">SignUp</a></button>
+    <button type="submit" class="signn"><a href="/signin" class="a">SignIn</a></button>
+        </div>
+    </div> 
+    <div class="intro">
+    <div class="main">
+        I am Nithin reddy , currently persuing Btech 3rd year in Institute of Aeronautical Enginnering.This is the real-time login form, developed using django.
+    </div>
+    <div class="about">
+        <h2>About this project</h2> 
+        <p>Firstly when you open this, it displays the signin and signout buttons at the top right,if you had already created account then click on signin or create your account by clicking the signup button.</p>
+    </div>
+    </div>
+    {% endif %}
+    <script></script>
+</body>
+</html>
